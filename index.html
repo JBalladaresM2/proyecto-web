@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="estilos.css"> 
+    <title>Sistema de clasificacion</title> 
+</head> 
+<body> 
+    <div class="container"> 
+        <h3>Biblioteca</h3> 
+        <h4>
+            Una biblioteca comunitaria está creando un sistema para analizar una lista de nombres de libros y determinar 
+            algunas características básicas de cada título. Se solicita un programa que permita ingresar una lista de 
+            títulos de libros en un arreglo de tipo cadena, y los clasifique según las siguientes reglas:
+        </h4>
+        <ul>
+            <li>Si el título contiene más de 20 caracteres, se debe incrementar un contador.</li>
+            <li>Si el ultimo carácter del título contiene al menos un número (0-9), se debe incrementar otro contador.</li>
+            <li>Los títulos que no cumplen ninguna de las condiciones anteriores se deben contar por separado en un tercer contador.</li>
+        </ul>
+        <form action=""> 
+            <div class="inputs"> 
+                <label for="libro">Añadir libro:</label>
+                <input type="text" id="libro" placeholder="Ejemplo: Pinocho"> 
+            </div> 
+            <div class="buttons"> 
+                <button type="button" onclick="añadir()">Añadir</button> 
+                <button type="button" onclick="clasificar()">Clasificar</button>
+                <button type="reset">Limpiar</button>
+            </div> 
+        </form> 
+    </div> 
+    <div class="resultado"> 
+        <h3>Resultado:</h3> 
+        <div id="salida"></div> 
+    </div> 
+</body> 
+    <script src="javascript/examen.js"></script> 
+</html> 

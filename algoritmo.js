@@ -42,7 +42,10 @@ function clasificar() {
             libros_clase1.push(libros[i])
         } else {
             let ultimo_caracter = libros[i][tamaño_titulo - 1]
-            if (!libros_clase2.includes(libros[i]) && ultimo_caracter >= 0 && ultimo_caracter <= 9) {
+           if (!libros_clase2.includes(libros[i]) && (ultimo_caracter == 0 || ultimo_caracter == 1 || 
+ultimo_caracter == 2 || ultimo_caracter == 3 || ultimo_caracter == 4 || 
+ultimo_caracter == 5 || ultimo_caracter == 6 || ultimo_caracter == 7 || 
+ultimo_caracter == 8 || ultimo_caracter == 9)) {
                 libros_clase2.push(libros[i])
             } else {
                 if (!libros_clase3.includes(libros[i])) {
